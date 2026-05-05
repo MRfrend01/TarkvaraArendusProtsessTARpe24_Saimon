@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: #dbefff;
+  color: black;
+  padding: 30px;
+  line-height: 1.6;
+}
+
+/* Tagasi link */
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 8px 14px;
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+a:hover {
+  background-color: white;
+}
+
+/* Pealkirjad */
+h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 30px 0 15px;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 20px 0 10px;
+}
+
+/* Tekst */
+p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* Sektsioonid (visuaalne "card") */
+h1, h2, h3, p, table {
+  background-color: rgba(255, 255, 255, 0.45);
+  padding: 20px;
+  border-radius: 18px;
+}
+
+/* Tabelid */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th {
+  font-size: 20px;
+  padding: 12px;
+  text-align: left;
+}
+
+td {
+  padding: 12px;
+  font-size: 18px;
+  vertical-align: top;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255,255,255,0.4);
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(255,255,255,0.2);
+}
+
+/* Väike hover efekt */
+tr:hover {
+  background-color: white;
+  transition: 0.2s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  th, td {
+    font-size: 16px;
+  }
+}
