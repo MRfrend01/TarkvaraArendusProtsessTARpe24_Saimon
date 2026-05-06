@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="UTF-8">
+<title>UML Indeks</title>
+<style>
+body { font-family: Arial; margin: 40px; background:#f9fafb; color:#333;}
+h1,h2 { color:#1e3a8a;}
+.container { max-width:1000px; margin:auto;}
+.card { background:white; padding:20px; margin:20px 0; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+.links a { display:block; margin:5px 0; color:#2563eb; text-decoration:none;}
+svg { margin-top:10px;}
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>UML (Unified Modeling Language)</h1>
+<p>
+UML on standardiseeritud modelleerimiskeel tarkvarasüsteemide visualiseerimiseks ja dokumenteerimiseks. 
+Seda kasutatakse süsteemide struktuuri ja käitumise kirjeldamiseks. UML aitab arendajatel ja analüütikutel paremini suhelda.
+</p>
+
+<h2>Alamlehed</h2>
+<div class="links">
+<a href="erd.html">ERD Diagrammid</a>
+<a href="flowchart.html">Vooskeem / Activity Diagram</a>
+</div>
+
+<h2>Diagrammide kirjeldused</h2>
+
+<div class="card">
+<h3>Use Case Diagram</h3>
+<p>Kasutusjuhtude diagramm kirjeldab süsteemi funktsionaalsust kasutaja vaatenurgast. See näitab, kuidas kasutajad süsteemiga suhtlevad.</p>
+<ul>
+<li>Actor – kasutaja</li>
+<li>Use case – tegevus (ovaal)</li>
+<li>Seos – joon</li>
+</ul>
+<svg width="200" height="120">
+<circle cx="30" cy="40" r="10"/>
+<line x1="30" y1="50" x2="30" y2="80"/>
+<ellipse cx="130" cy="50" rx="40" ry="20" fill="none" stroke="black"/>
+<line x1="40" y1="50" x2="90" y2="50" stroke="black"/>
+</svg>
+</div>
+
+<div class="card">
+<h3>Class Diagram</h3>
+<p>Klassidiagramm näitab süsteemi klasse, nende atribuute ja meetodeid ning seoseid. See on objektorienteeritud süsteemide alus.</p>
+<ul>
+<li>Klass – ristkülik</li>
+<li>Atribuudid</li>
+<li>Meetodid</li>
+</ul>
+<svg width="200" height="120">
+<rect x="50" y="20" width="100" height="80" fill="none" stroke="black"/>
+<line x1="50" y1="50" x2="150" y2="50"/>
+</svg>
+</div>
+
+<div class="card">
+<h3>Sequence Diagram</h3>
+<p>Järjestusdiagramm näitab objektide vahelist suhtlust ajas. See keskendub sõnumite järjekorrale.</p>
+<ul>
+<li>Objektid</li>
+<li>Sõnumid (nooled)</li>
+</ul>
+<svg width="200" height="120">
+<line x1="50" y1="20" x2="50" y2="100"/>
+<line x1="150" y1="20" x2="150" y2="100"/>
+<line x1="50" y1="50" x2="150" y2="50" stroke="black"/>
+</svg>
+</div>
+
+<div class="card">
+<h3>State Diagram</h3>
+<p>Oleku diagramm kirjeldab objekti olekuid ja nende muutusi. Seda kasutatakse süsteemi käitumise modelleerimiseks.</p>
+<ul>
+<li>Olek – ring</li>
+<li>Üleminek – nool</li>
+</ul>
+<svg width="200" height="120">
+<circle cx="50" cy="60" r="20" fill="none" stroke="black"/>
+<circle cx="150" cy="60" r="20" fill="none" stroke="black"/>
+<line x1="70" y1="60" x2="130" y2="60" stroke="black"/>
+</svg>
+</div>
+
+<div class="card">
+<h3>Component Diagram</h3>
+<p>Komponentdiagramm näitab süsteemi komponente ja nendevahelisi sõltuvusi. Seda kasutatakse arhitektuuri visualiseerimiseks.</p>
+<ul>
+<li>Komponent – ristkülik</li>
+<li>Seosed</li>
+</ul>
+<svg width="200" height="120">
+<rect x="30" y="40" width="50" height="40" fill="none" stroke="black"/>
+<rect x="120" y="40" width="50" height="40" fill="none" stroke="black"/>
+<line x1="80" y1="60" x2="120" y2="60" stroke="black"/>
+</svg>
+</div>
+
+</div>
+</body>
+</html>
