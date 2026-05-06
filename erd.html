@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="UTF-8">
+<title>ERD</title>
+<style>
+body { font-family: Arial; margin:40px; background:#f9fafb;}
+.container { max-width:1000px; margin:auto;}
+.card { background:white; padding:20px; margin:20px 0; border-radius:10px;}
+</style>
+</head>
+<body>
+<div class="container">
+
+<a href="uml-index.html">← Tagasi UML indeksisse</a>
+
+<h1>ERD (Entity-Relationship Diagram)</h1>
+
+<h2>Mis on ERD?</h2>
+<p>ERD on diagramm, mis kirjeldab andmebaasi struktuuri ja seoseid tabelite vahel.</p>
+
+<h2>Kus kasutatakse?</h2>
+<ul>
+<li>Andmebaasidisain</li>
+<li>Süsteemianalüüs</li>
+<li>Tarkvaraarendus</li>
+</ul>
+
+<h2>Seosed</h2>
+
+<div class="card">
+<h3>1:1</h3>
+<svg width="200" height="60">
+<rect x="10" y="20" width="50" height="30" fill="none" stroke="black"/>
+<rect x="140" y="20" width="50" height="30" fill="none" stroke="black"/>
+<line x1="60" y1="35" x2="140" y2="35" stroke="black"/>
+</svg>
+<p>Üks ühele seos.</p>
+</div>
+
+<div class="card">
+<h3>1:N</h3>
+<svg width="200" height="60">
+<line x1="60" y1="35" x2="140" y2="35" stroke="black"/>
+</svg>
+<p>Üks mitmele.</p>
+</div>
+
+<div class="card">
+<h3>M:N</h3>
+<svg width="200" height="60">
+<line x1="60" y1="35" x2="140" y2="35" stroke="black"/>
+</svg>
+<p>Mitmed mitmele.</p>
+</div>
+
+<h2>Olemitabel</h2>
+<ul>
+<li>Kohustuslikud väljad</li>
+<li>Andmetüübid</li>
+<li>Piirangud</li>
+</ul>
+
+<h2>Võtmed</h2>
+<ul>
+<li>Primary Key – unikaalne ID</li>
+<li>Foreign Key – viitab teisele tabelile</li>
+<li>Composite Key – mitu välja koos</li>
+<li>Key – üldine võti</li>
+</ul>
+
+<h2>Näidis</h2>
+<svg width="300" height="150">
+<rect x="10" y="20" width="80" height="50" fill="none" stroke="black"/>
+<rect x="200" y="20" width="80" height="50" fill="none" stroke="black"/>
+<line x1="90" y1="45" x2="200" y2="45" stroke="black"/>
+</svg>
+
+<h2>Allikad</h2>
+<ul>
+<li>https://www.lucidchart.com</li>
+<li>https://www.draw.io</li>
+<li>https://www.ibm.com</li>
+</ul>
+
+</div>
+</body>
+</html>
